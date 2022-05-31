@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const morgon = require("morgan");
 const app = express();
-
+module.exports = app;
 app.use(morgon("dev"));
 
 app.use(express.json());
